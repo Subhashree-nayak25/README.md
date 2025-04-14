@@ -1,25 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Book Landing Page</title>
+
+  <title>Spend your time on books</title>
   <link rel="stylesheet" href="webdev.css">
 </head>
 <body>
 
-  <div class="container">
-    <div class="book-image">
-      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Book Cover">
-    </div>
-    <div class="book-details">
-      <h1>The Secrets of the Universe</h1>
-      <h3>by Jane Doe</h3>
-      <p>An inspiring journey through space, time, and the unknown. This book explores everything from black holes to human emotions, explained in a way that will change how you see the universe forever.</p>
-      <div class="price">₹499</div>
-      <a href="#" class="btn">Buy Now</a>
+  <div class="main">
+    <div class="navbar">
+       <div class="icon">
+        <h2 class="logo">BokieBerg</h2>
+       </div>
+
+       <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">CONTACT</a></li>
+            
+        </ul>
+       </div>
+       <div class="search">
+        <input class="srch" type="search" name="" placeholder="Type to text">
+        <a href="#"><button class="btn">Search</button></a>
+       </div>
+       <div class="content">
+        <h2>“Fuel Your Imagination .<br> One Book at a Time.”<br></h2>
+        <p class="par">Welcome to BokieBerg –<br> your cozy corner of the internet for handpicked reads.<br> From timeless classics to thrilling page-turners, we bring stories that stay with you.<br> Browse. Buy.<br> Escape into a book.</p>
+        <button class="cn"><a href ="#">JOIN US</a></button>
+       </div>
+
     </div>
   </div>
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Book Categories</h2>
+
+  <!--science fiction-->
+
+      <div class="accordion">
+        <input type="checkbox" id="science-fiction" />
+        <label for="science-fiction" class="accordion-label">Science Fiction
+        <div class="accordion-content">
+          <p>Explore futuristic adventures, technology, space, and time travel stories.</p>
+          <div class="book-grid">
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/9259256-L.jpg" alt="Dune">
+      <p>Dune</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/8228691-L.jpg" alt="Neuromancer">
+      <p>Neuromancer</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/8371966-L.jpg" alt="The Martian">
+      <p>The Martian</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/8134646-L.jpg" alt="Ender's Game">
+      <p>Ender's Game</p>
+    </div>
+
+    </label>
+        </div>
+      </div>
+      </div>
+
+      <!--math-->
+
+  <div class="accordion">
+        <input type="checkbox" id="math" />
+        <label for="math" class="accordion-label">Math
+        <div class="accordion-content">
+          <p>Dive into books on algebra, calculus, statistics, and problem-solving techniques.</p>
+          <div class="book-grid">
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/11342484-L.jpg" alt="Math Book 1">
+      <p>Advanced Algebra</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/10569782-L.jpg" alt="Math Book 2">
+      <p>Calculus Made Easy</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/11185920-L.jpg" alt="Math Book 3">
+      <p>Statistics 101</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/10504865-L.jpg" alt="Math Book 4">
+      <p>Problem Solving</p>
+    </div>
+</label>
+  </div>
+    </div>
+</div> 
+
+       <!--history-->
+       <div class="accordion">
+        <input type="checkbox" id="history" />
+        <label for="history" class="accordion-label">History
+        <div class="accordion-content">
+          <p>Learn about ancient civilizations, world wars, and significant events.</p>
+          <div class="book-grid">
+            <div class="book-card">
+              <img src="https://covers.openlibrary.org/b/id/8164816-L.jpg" alt="A People's History of the United States">
+              <p>A People's History</p>
+            </div>
+            <div class="book-card">
+              <img src="https://covers.openlibrary.org/b/id/8226191-L.jpg" alt="Guns, Germs, and Steel">
+              <p>Guns, Germs, and Steel</p>
+            </div>
+            <div class="book-card">
+              <img src="https://covers.openlibrary.org/b/id/8225636-L.jpg" alt="Sapiens">
+              <p>Sapiens</p>
+            </div>
+        </label>
+          </div>
+        </div>
+       </div>
+
+  <!--literature-->
+        <div class="accordion">
+        <input type="checkbox" id="literature" />
+        <label for="literature" class="accordion-label">Literature
+        <div class="accordion-content">
+          <p>Discover classic and modern literary works from all around the world.</p>
+          <div class="book-grid">
+            <div class="book-card">
+              <img src="https://covers.openlibrary.org/b/id/10594734-L.jpg" alt="Pride and Prejudice">
+              <p>Pride and Prejudice</p>
+            </div>
+            <div class="book-card">
+              <img src="https://covers.openlibrary.org/b/id/7222246-L.jpg" alt="To Kill a Mockingbird">
+              <p>To Kill a Mockingbird</p>
+            </div>
+            <div class="book-card">
+              <img src="https://covers.openlibrary.org/b/id/8319251-L.jpg" alt="1984">
+              <p>1984</p>
+            </div>
+        </label>
+          </div>
+        </div>
+    </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
